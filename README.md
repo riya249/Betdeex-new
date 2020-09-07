@@ -1,45 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Standard
 
-## Available Scripts
+1.File Type other than component file should be mentioned in file name like  add-to-cart.constant.ts" 
+2.All string literals should be written in separate file-name.constant.ts file and  respective variables should be used in components.
+3.Use "prop-types" for datatypes while declaring Props 
+4.Use Context Api to manage User data with localStorage, so that it can be available on demand from any component
+5.Create Apis folder and Sub-folders with entity names to call apis
 
-In the project directory, you can run:
+6.Use Loader like spinner for waiting intervals 
 
-### `yarn start`
+7.Keep variables in State only when there is need to re-render component on change on respective variable value, if change in value doesn't make difference in with re-render then that variable can be declared outside the constructor
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# dateswappers-react
+8.Urls should be small case with "-" separated for multi-word url
+9.Surround code with try-catch that are dependent over third-parties like api calls and file inputs
+10.DON'T USE JQUERY
+11.DON'T USE any datatype
+12.Follow theme approve while using css
+13.Use Snackbar for general immediate notifications like api response
+14.Don't install plugins that have less downloads
+15.Don't use plugins for small code or that can be written on your own
+16.React Bootstrap recommended if required
+17.Ts-lint plugin for vs-code | SublimeLinter and  SublimeLinter-tslint for sublime text prefered
