@@ -1,5 +1,5 @@
 import { create } from 'apisauce';
-import config from '../config/config';
+import config from '../../config/config';
 
 //in response of api returns 200 of success message then apisauce will contain ok object as true which can be use to proceed directly without response status check only by ok object
 

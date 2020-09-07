@@ -2,12 +2,12 @@ import React from 'react';
 import { ProgressiveImage } from '../../components/ProgressiveImage';
 
 export class Homepage extends React.Component {
-
+ 
 	render(){
 		return <section>
 			<p>Homepage</p>
 		<div className="row">
-		<div className="col-sm-4">
+		<div className="col-sm-4"> 
 			<ProgressiveImage
 		    alt={"woman"}
 		    overlaySrc={
