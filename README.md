@@ -1,4 +1,4 @@
-## Project Standard
+## Project Standard Guidelines
 
 1.File Type other than component file should be mentioned in file name like  add-to-cart.constant.ts" 
 
