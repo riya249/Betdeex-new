@@ -1,0 +1,32 @@
+.nav-flex{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+}
+
+.nav-two-container{
+    background-color: #ffffff;
+    height: 50px;
+}
+
+.nav-flex li{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.nav-top-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.bd-lines.tm-spc{
+margin-left: 30px ;
+margin-right: 30px;
+margin-top:10px;
+}
+.nav-link.dropdown-toggle{
+border: 1px solid  #66CC75;
+border-radius: 15px;
+width: 100%;
+}

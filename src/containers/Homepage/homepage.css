@@ -1,0 +1,64 @@
+.bet-btn-st{
+        border: 0;
+        width: 200px;
+        height: 40px;
+        color: #ffffff;
+        background-color: #40ae49;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 10px;
+}
+
+li a{
+    color: #000 !important;
+}
+
+.wrapper-container{
+    width: 72%;
+    margin:0 auto;
+    margin-top: 5%;
+}
+
+.ftr-txt{
+    color:#40ae49;
+    font-weight: bold;
+    }
+
+    .bet-btn-st.mg-left{
+    margin-left: 20px;
+    }
+
+    .sect-container{
+        background-color: #ffffff;
+    }
+    
+    .sect-head{
+        color:#40ae49;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .evnt-img {
+        width: 25%;
+        height: 285px;
+        object-fit: fill;
+    }
+
+    .sect-head{
+        margin-top: 20%;
+    }
+
+    .pop-ev-box{
+        border: 1px solid #000;
+        height: 300px;
+        width: 200px
+    }
+    .row.inner-sect{
+    width: 60%;
+    justify-content: space-between;
+  margin-left: 20%;
+    }
+
+    

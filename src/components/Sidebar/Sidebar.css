@@ -1,0 +1,26 @@
+.main-ev-desc{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bet-value{
+      border: 1px solid #40ae49;
+      padding: 10px;
+     
+  }
+
+  .sd-txt{
+    font-weight: bold;
+  }
+
+  .sidebar-container{
+      padding-left: 20px;
+  }
+  .main-ev-desc.ev-border{
+  border-bottom: 1px solid #a7a7a7;
+  box-shadow: #a7a7a7;
+  margin-bottom: 30px;
+  }
+  .catg-side{
+      padding-top: 30px;
+  }

@@ -19,7 +19,7 @@ export const lightTheme: DefaultTheme = {
 		backgroundColor: '#fff',
 	},
 	body: {
- 		background: '#fff'
+ 		background: '#ececec'
   }
 };
 

@@ -6,7 +6,11 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Homepage } from './containers/Homepage';
 import { GlobalStyles } from './lib/Theme/GlobalStyles';
- 
+import {AllEvent} from './containers/Events/AllEvent';
+import { Event } from './containers/Events/Event';
+import {Createbet} from './containers/Createbet/Createbet';
+
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +20,10 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" component={Homepage} />
+            <Route exact path="/all-event" component={AllEvent} />
+            <Route exact path="/event" component={Event} />
+            <Route exact path="/faq" component={Event} />
+            <Route exact path="/create-bet" component={Createbet} />
            </Switch>
         </Router>
 

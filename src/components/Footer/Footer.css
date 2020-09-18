@@ -1,0 +1,44 @@
+.footer-container{
+    width: 77%;
+    margin:0 auto;
+    margin-top: 5%;
+    padding: 35px;
+}
+
+.footer-bgd-color{
+    background-color: #ffffff;
+}
+
+.social-img{
+    width: 30px;
+    height: 30px;
+    margin: 7px;
+    margin-top: 20px;
+}
+
+.social-sm-flex{
+    display: flex;
+}
+
+ul li{
+    list-style:none;
+}
+
+
+.btdex-logo {
+    width: 186px;
+    height: 65px;
+    margin-bottom: 25px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a7a7a7;
+}
+
+.bd-lines{
+    color: #343a407a;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
