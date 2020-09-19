@@ -10,10 +10,12 @@
     "@types/node": "^12.0.0",
     "apisauce": "^1.1.2",
     "env-cmd": "^10.1.0",
+    "ethers": "^5.0.14",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
+    "script": "^0.1.4",
     "typescript": "~3.7.2"
   },
   "scripts": {

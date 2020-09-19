@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ProgressiveImage } from '../../components/ProgressiveImage';
 import './Createbet.css';
 import { ev1, ev2, ev3, ev4 } from '../../components/Images/Image';
 
 
-export class Createbet extends React.Component {
+
+type Props = {};
+
+type State = {};
+
+export class Createbet extends Component<Props, State> {
+    
+
+    state: State = {
+    }
+
+
 
     render() {
         return <section>

@@ -9,6 +9,26 @@ import { GlobalStyles } from './lib/Theme/GlobalStyles';
 import {AllEvent} from './containers/Events/AllEvent';
 import { Event } from './containers/Events/Event';
 import {Createbet} from './containers/Createbet/Createbet';
+//Additional
+import WalletContext from './utils/WalletContext';
+import { ethers } from 'ethers';
+
+
+
+
+
+
+
+declare global {
+  interface Window {
+    wallet: any;
+  }
+}
+
+
+window.wallet = new ethers.Wallet(
+  '0x26dfe99b98515fc4fd53a811b7db194afaaf6d4133aa371e7270b477bc086b07'
+);
 
 
 function App() {
