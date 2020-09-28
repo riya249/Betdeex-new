@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
-import { BetdeexFactory } from './Typechain/BetdeexFactory';
 import { DayswapperFactory } from './Typechain/DayswapperFactory';
-import { BetinterfaceFactory } from './Typechain/BetinterfaceFactory';
+import { BetdeexFactory } from './Typechain/BetdeexFactory';
+import { BetFactory } from './Typechain/BetFactory';
 
 
 
@@ -11,11 +11,11 @@ const nodeUrl = process.env.REACT_APP_NODE_URL || 'https://node2.testnet.eraswap
 export const addresses = {
     Betdeex:
       process.env.REACT_APP_BETDEEX_ADDRESS ||
-      '0xD9295D0c63e99d16Ee1D38046316e4cf233E1211',
+      '0x937f815dA0326AcEADCfCd78Ea29B9B22E93Dc71',
 
-      dayswapper:
-      process.env.REACT_APP_FAITHMINUS_ADDRESS ||
-      '',
+      Bet:
+      process.env.REACT_APP_BET_ADDRESS ||
+      '0xbF9F2C1C38BB485c4e18Dad1Ad85748876bE50be',
       kycDapp:
       process.env.REACT_APP_KYCDAPP_ADDRESS || '0x2c3B31e797575d7705B11424c9Bb66e6B599bf01',
     timeallyManager: '0x89309551Fb7AbaaB85867ACa60404CDA649751d4',
@@ -26,9 +26,8 @@ export const addresses = {
 
   export const BetdeexInst = BetdeexFactory.connect(addresses.Betdeex, providerESN);
 
-  export const daySwapperInst = DayswapperFactory.connect(addresses.dayswapper, providerESN);
+  export const BetInst = BetFactory.connect(addresses.Bet, providerESN);
 
-  export const betInterfaceInst = BetinterfaceFactory.connect(addresses.kycDapp, providerESN);
 
 
 
@@ -39,7 +38,6 @@ window.providerESN = new ethers.providers.JsonRpcProvider(nodeUrl);
 //@ts-ignore
 window.BetdeexInst = BetdeexFactory.connect(addresses.Betdeex, providerESN);
 
-//@ts-ignore
-window.dayswapperInst = DayswapperFactory.connect(addresses.dayswapper, providerESN);
+
 
 

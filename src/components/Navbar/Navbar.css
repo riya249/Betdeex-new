@@ -1,13 +1,13 @@
 .nav-flex{
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
 
 }
 
 .nav-two-container{
     background-color: #ffffff;
-    height: 50px;
+    height: 67px;
 }
 
 .nav-flex li{
@@ -29,4 +29,23 @@ margin-top:10px;
 border: 1px solid  #66CC75;
 border-radius: 15px;
 width: 100%;
+}
+
+.nav-list-txt{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.nav-list-txt:hover{
+    color: #66CC75;
+}
+
+a{
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.grn-bd{
+border-left: 3px solid #66CC75;
 }

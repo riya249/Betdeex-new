@@ -23,7 +23,7 @@ export class Event extends React.Component {
 				<p>"Luck Becomes Limitless Opportunity with Confident Preparation
               <br />Decentralized, Transparent & Trustless"</p>
 				<div className="row">
-					<button className="bet-btn-st ev-btn" >SIGN UP TO EXPLORER EVENTS NOW</button>
+					{/* <button className="bet-btn-st ev-btn" >SIGN UP TO EXPLORER EVENTS NOW</button> */}
 					<a className="bet-btn-st mg-left" href="/create-bet">CREATE BET</a>
 				</div>
 				</div>

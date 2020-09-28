@@ -12,7 +12,7 @@ import {Createbet} from './containers/Createbet/Createbet';
 //Additional
 import WalletContext from './utils/WalletContext';
 import { ethers } from 'ethers';
-
+import  {CustomWallet } from './ehtereum/CustomWallet';
 
 
 
@@ -31,9 +31,49 @@ window.wallet = new ethers.Wallet(
 );
 
 
-function App() {
+type State = {
+  wallet: ethers.Wallet | null;
+}
+
+type Props = {};
+
+
+class App extends React.Component<Props, State> {
+
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      wallet: null,
+    };
+  }
+
+    setWallet = (privateKey: string) => {
+      this.setState({ wallet: new CustomWallet(privateKey) });
+    };
+
+     //@ts-ignore
+  componentDidMount() {
+    if (process.env.REACT_APP_NODE_ENV === 'development') {
+      this.setWallet(window.wallet.privateKey);
+    }
+    setTimeout(() => {
+      try {
+        window.onload = function () {
+          window?.opener?.postMessage('loaded', '*');
+        };
+      } catch (e) {
+        console.log(e);
+      }
+    }, 1000);
+  }
+
+  render() {
+    console.log("setwallet",this.state.wallet)
   return (
     <div className="App">
+       <WalletContext.Provider
+          value={{ wallet: this.state.wallet ,setWallet: this.setWallet}}
+        >
     <ThemeProvider>
       <GlobalStyles/>
       <Navbar />
@@ -49,8 +89,11 @@ function App() {
 
         <Footer />
       </ThemeProvider>
+      </WalletContext.Provider>
     </div>
   );
+ }
 }
+
 
 export default App;

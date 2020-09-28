@@ -6,6 +6,8 @@ import { ev1, ev2, ev3, ev4 } from '../../components/Images/Image';
 
 export class AllEvent extends React.Component {
 
+
+	
 	render() {
 		return <section>
 		<div className="wrapper-container">
@@ -16,7 +18,7 @@ export class AllEvent extends React.Component {
 				<p>"Luck Becomes Limitless Opportunity with Confident Preparation
               <br />Decentralized, Transparent & Trustless"</p>
 				<div className="row">
-					<button className="bet-btn-st ev-btn" >SIGN UP TO EXPLORER EVENTS NOW</button>
+					{/* <button className="bet-btn-st ev-btn" >SIGN UP TO EXPLORER EVENTS NOW</button> */}
 					<a className="bet-btn-st mg-left" href="/create-bet">CREATE BET</a>
 				</div>
 				</div>

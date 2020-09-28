@@ -2,24 +2,64 @@ import React from 'react';
 import { ProgressiveImage } from '../../components/ProgressiveImage';
 import './homepage.css';
 import { ev1, ev2, ev3, ev4 } from '../../components/Images/Image';
+import { BetdeexInst ,BetInst} from '../../ehtereum/Instances';
+
+
+
+type Props = {};
+
+type State = {
+    betName: string;
+    category: string;
+    subCategory: string;
+    description: string;
+    minBet: number | null;
+    pricePerThousand: number | null;
+    isDraw: boolean | null;
+    pauseTimestamp: Date | null;
+};
 
 
 export class Homepage extends React.Component {
-
+    state: State = {
+        betName: '',
+        category: '',
+        subCategory: '',
+        description:'',
+        minBet: 50,
+        pricePerThousand: 998,
+        isDraw: false,
+        pauseTimestamp:null,
+	};
+	
+	async createBet()  {
+        console.log('create bet check');
+        try {
+            const data = await BetdeexInst.createBet(
+              this.context.wallet,
+              this.state.betName, this.state.category, this.state.subCategory,
+               Number(this.state.pauseTimestamp), true,this.state.description
+            );
+          } catch (e) {
+            console.log("create bet error")
+          }
+	}
+	
 	render() {
 		return <section>
 
-
-			<div className="wrapper-container">
-
+             
+			 <div className="betdeex-hero-bgd">
+			<div className="wrapper-container hero-mg">
 				<h1>WELCOME TO THE</h1>
 				<h1 className="ftr-txt">FUTURE OF PREDICTION</h1>
 				<p>"Luck Becomes Limitless Opportunity with Confident Preparation
               <br />Decentralized, Transparent & Trustless"</p>
 				<div className="row">
-					<button className="bet-btn-st" >EXPLORER EVENTS NOW</button>
+					<a className="bet-btn-st mg-left"  href="/event">EXPLORER EVENTS NOW</a>
 					<a className="bet-btn-st mg-left" href="/create-bet">CREATE BET</a>
 				</div>
+			  </div>
 			</div>
 
 			<div>

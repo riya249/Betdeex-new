@@ -2,12 +2,21 @@
         border: 0;
         width: 200px;
         height: 40px;
-        color: #ffffff;
+        color: #ffffff !important;
         background-color: #40ae49;
         border-radius: 10px;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 7px;
+        font-weight: bold;
 }
+
+.betdeex-hero-bgd{
+    background-image:url('../../assets/images/bgdtwo.png');
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+   }
 
 li a{
     color: #000 !important;
@@ -55,10 +64,13 @@ li a{
         height: 300px;
         width: 200px
     }
+
     .row.inner-sect{
     width: 60%;
     justify-content: space-between;
   margin-left: 20%;
     }
 
-    
+    .wrapper-container.hero-mg{
+padding-top: 10%;
+    }
